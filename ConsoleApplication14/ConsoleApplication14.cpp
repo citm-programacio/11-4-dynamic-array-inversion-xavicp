@@ -27,7 +27,7 @@ public:
         for (int i = 0; i < capacity; i++) {
             cin >> *(array + i);
         }
-        size = capacity; // Assume all inputs fill the array
+        size = capacity; 
     }
 
     
