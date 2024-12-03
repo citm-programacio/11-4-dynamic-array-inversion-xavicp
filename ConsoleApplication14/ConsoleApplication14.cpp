@@ -6,9 +6,9 @@ using namespace std;
 class Dynamic_array {
 
 private:
-    int* array;     // Pointer to the dynamic array
-    int size;       // Number of elements currently in the array
-    int capacity;   // Maximum capacity of the array
+    int* array;     
+    int size;       
+    int capacity;   
 
 public:
     // Constructor
@@ -21,7 +21,7 @@ public:
         delete[] array;
     }
 
-    // Fill the array with user-provided numbers
+   
     void numeros() {
         cout << "Por favor, introduzca " << capacity << " números:" << endl;
         for (int i = 0; i < capacity; i++) {
@@ -30,7 +30,7 @@ public:
         size = capacity; // Assume all inputs fill the array
     }
 
-    // Print the elements of the array
+    
     void imprimir() {
         for (int i = 0; i < size; i++) {
             cout << *(array + i) << " ";
@@ -38,7 +38,7 @@ public:
         cout << endl;
     }
 
-    // Invert the order of elements in the array
+    
     void invertir() {
        
         int motion;
@@ -56,14 +56,14 @@ int main() {
     // Create a dynamic array of capacity 10
     Dynamic_array arr(10);
 
-    // Populate the array
+   
     arr.numeros();
 
-    // Print original array
+   
     cout << "Array original:" << endl;
     arr.imprimir();
 
-    // Invert and print the array
+    
     arr.invertir();
     cout << "Array invertido:" << endl;
     arr.imprimir();
